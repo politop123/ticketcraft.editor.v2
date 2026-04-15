@@ -1,22 +1,26 @@
 {
   "name": "ticketcraft-editor-v2",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
     "preview": "nuxt preview",
+    "prepare": "nuxt prepare",
+    "cleanup": "npx nuxi cleanup",
+    "refresh": "npm run cleanup && npm run prepare",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^4.1.3",
-    "@pinia/nuxt": "^0.11.2",
-    "pinia": "^3.0.3",
-    "vue": "^3.5.22",
-    "vue-router": "^4.6.0"
+    "nuxt": "4.0.3",
+    "@pinia/nuxt": "0.11.2",
+    "pinia": "3.0.3"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   }
 }
